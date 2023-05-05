@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+}
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+}
+.card-container .card .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-container .card .image .name-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-container .card .image .name-button button {
+  cursor: pointer;
+}
+.card-container .card .card-details {
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-star {
+  color: yellow;
+}/*# sourceMappingURL=Display-card.css.map */

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(16, 20, 31);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.container nav {
+  background-color: rgb(22, 29, 47);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 10vw;
+  border-radius: 10px;
+  margin: 0 2vw;
+  align-items: center;
+}
+.container nav .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container nav .navbar i {
+  color: rgb(74, 90, 123);
+  cursor: pointer;
+}
+.container nav .navbar .fa-house {
+  color: white;
+}
+.container nav .profile-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container nav .profile-div img {
+  width: 50%;
+}
+.container section {
+  padding: 0 0 0 2vw;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+.container section .search-bar {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  padding: 3vh 0 3vh 2vw;
+  align-items: center;
+  gap: 2vw;
+}
+.container section .search-bar input:focus {
+  border: 3px solid rgb(22, 29, 47);
+}
+.container section .search-bar input {
+  background-color: inherit;
+  border: 2px solid rgb(22, 29, 47);
+  color: white;
+  height: 150%;
+  width: 50%;
+  border-radius: 5px;
+}
+.container section .search-bar i {
+  color: white;
+  cursor: pointer;
+}
+.container section .trending {
+  display: flex;
+  flex-direction: column;
+}
+.container section .trending h1 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.8rem, 1vw, 1rem) "Nunito";
+}
+.container section .trending div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container section .trending div .card {
+  display: flex;
+  flex-direction: column;
+}
+.container section .all-shows h1 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.8rem, 1vw, 1rem) "Nunito";
+}
+.container section .all-shows div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container section .all-shows div .card {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=index.css.map */

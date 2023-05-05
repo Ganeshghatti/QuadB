@@ -1,0 +1,91 @@
+@import "style";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $bgcolor;
+}
+.container {
+  @include flex(row);
+  width: 100vw;
+  height: 100vh;
+  nav {
+    background-color: rgb(22, 29, 47);
+    @include flex(column);
+    justify-content: space-around;
+    width: 10vw;
+    border-radius: 10px;
+    margin: 0 2vw;
+    align-items: center;
+    .navbar {
+      @include flex(column);
+      gap: 2rem;
+      i {
+        color: rgb(74, 90, 123);
+        cursor: pointer;
+      }
+      .fa-house {
+        color: white;
+      }
+    }
+    .profile-div {
+      @include flex(column);
+      align-items: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+  section {
+    padding: 0 0 0 2vw;
+    color: $white;
+    @include flex(column);
+    .search-bar {
+      display: flex;
+      @include flex(row);
+      padding: 3vh 0 3vh 2vw;
+      align-items: center;
+      gap: 2vw;
+      input:focus {
+        border: 3px solid rgb(22, 29, 47);
+      }
+      input {
+        background-color: inherit;
+        border: 2px solid rgb(22, 29, 47);
+        color: white;
+        height: 150%;
+        width: 50%;
+        border-radius: 5px;
+      }
+      i {
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .trending {
+      @include flex(column);
+      h1 {
+        @include heading();
+      }
+      div {
+        @include flex(row);
+        flex-wrap: wrap;
+        .card {
+          @include flex(column);
+        }
+      }
+    }
+    .all-shows {
+      h1 {
+        @include heading();
+      }
+      div {
+        @include flex(row);
+        flex-wrap: wrap;
+        .card {
+          @include flex(column);
+        }
+      }
+    }
+  }
+}

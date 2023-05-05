@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$bgcolor:rgb(16, 20, 31);
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin heading(){
+    color: $white;
+    font-size:clamp(0.8rem, 1vw, 1rem)  'Nunito';
+}
